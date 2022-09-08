@@ -1,5 +1,7 @@
 # Part 2: Saving Faves
 
+sequelize model:create --name fave --attributes title:string,imdbid:string
+
 ## User Stories
 1. As a user, I want to save movies from my search results to a list of my faves.
 2. As a user, I want to perform this action from the movie detail page.
