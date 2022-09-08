@@ -33,6 +33,7 @@ app.get('/details/:id', (req, res) => {
   console.log(req.params.id)
   axios.get(`http://www.omdbapi.com/?i=${req.params.id}&apikey=${process.env.OMDB_API_KEY}`)
     .then(response => {
+      console.log(response.data)
       res.render('detail.ejs', { movie: response.data })
     })
     .catch(console.log)
