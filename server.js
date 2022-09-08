@@ -38,4 +38,16 @@ app.get('/details/:id', (req, res) => {
     .catch(console.log)
 })
 
+// FAVES routes
+// GET /faves -- READ all faves and display them to the user
+app.get('/faves', (req, res) => {
+  res.send(`show the user their faves`)
+})
+
+// POST /faves -- CREATE new fave and redirect to /faves to display user faves
+app.post('/faves', (req, res) => {
+  res.send(`create a new fave in the database`)
+})
+
+
 app.listen(process.env.PORT || 3000);
