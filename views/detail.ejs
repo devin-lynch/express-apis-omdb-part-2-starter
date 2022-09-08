@@ -7,7 +7,7 @@
 <img src="<%= movie.Poster %>" />
 
 <form method="POST" action="/faves">
-    <input value="<%= movie.Title %>" name="title" />
-    <input value="<%= movie.imdbID %>" name="imdbid" />
+    <input hidden value="<%= movie.Title %>" name="title" />
+    <input hidden value="<%= movie.imdbID %>" name="imdbid" />
     <button type="submit">Fave this Movie!</button>
 </form>
